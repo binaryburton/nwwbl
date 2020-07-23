@@ -1,16 +1,17 @@
 <template>
-  <div class="hello">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <h1>{{ msg }}</h1>
+  <div class="dash-container">
+    <div class="dash-col">
+      <img alt="Vue logo" src="../assets/logo.png">
+    </div>
+    <div class="dash-col">
+      <h1>A Competative Adult Baseball League</h1>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Dashboard',
-  props: {
-    msg: String
-  }
+  name: 'Dashboard'
 }
 </script>
 
@@ -29,5 +30,28 @@ li {
 }
 a {
   color: #42b983;
+}
+.dash-container {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.dash-col {
+  width: 50%;
+  height: 12rem;
+}
+
+img {
+  padding-right: .5rem;
+  float: right;
+  width: 7rem;
+  height: 12rem;
+}
+h1 {
+  padding-left: .5rem;
+  font-size: 1.5rem;
+  width: 10rem;
+  text-align: left;
 }
 </style>

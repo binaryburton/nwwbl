@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Dashboard msg="A Competative Adult Baseball League"/>
+    <Dashboard />
   </div>
 </template>
 
@@ -23,10 +23,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-img {
-  width: 20rem;
-  height: 20rem;
 }
 </style>
