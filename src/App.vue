@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Nav />
-    <Dashboard class="dash" />
+    <Nav class="app-nav" />
+    <Dashboard />
     <Footer />
   </div>
 </template>
@@ -22,16 +22,16 @@ export default {
 </script>
 
 <style>
-.dash {
-  border-style: solid;
-  border-color: #6bc29b;
-}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 10px;
+  margin-top: 5px;
+}
+.app-nav {
+  position: sticky;
+  top: 0;
 }
 </style>

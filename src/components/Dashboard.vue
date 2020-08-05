@@ -10,6 +10,10 @@
     </div>
     <div class="dash-content">
       DASHBOARD CONTENT
+      <div>
+        I want to add a blog section where I talk about my music career, updates on it, make new angular application
+        Then create same app, in react, but its my proffesional programming website, blog about cowboy coder, my past, present, future goasl for programming
+      </div>
     </div>
   </div>
 </template>
@@ -32,11 +36,8 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-a {
-  color: #42b983;
-}
 .dash-container {
-  
+  width: 100%;
   padding-top: 1rem;
   display: flex;
   flex-direction: row;
@@ -51,7 +52,7 @@ a {
   margin-top: 1rem;
   width: 100%;
   height: 22rem;
-  background-color: #6bc29b;
+  background-color: #dce0df;
 }
 
 img {

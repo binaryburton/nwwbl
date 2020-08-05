@@ -1,9 +1,14 @@
 <template>
   <div class="nav-element-container2">
-    <div class="nav-element-label">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div v-if="navItem.slice(0,2) === 'fa'">
+      <i v-bind:class="navItem" aria-hidden="true"></i>
+    </div>
+    <div v-else>
       {{navItem}}
     </div>
   </div>
+  
 </template>
 
 <script>
@@ -21,8 +26,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-element-container2 {
-  border-color: white;
-  border-style:hidden;
   height: 4rem;
   float: left;
   width: 100%

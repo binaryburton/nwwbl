@@ -9,11 +9,15 @@
 
 <script>
 import NavElement from './NavElement.vue'
+
+// const yo = '<div>Hello</div>';
+// const yo = '<v-icon>fas fa-search</v-icon>';
+
 export default {
   name: 'Nav',
   data: () => {
     return {
-      navItems: ['about', 'contact', 'teams']
+      navItems: ['fa fa-user', 'fa fa-search', 'about', 'contact', 'teams']
     }
   },
   components: {
@@ -25,9 +29,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-container {
-  background-color: #6bc29b;
+  background-color: white;
+  position: sticky;
+  top: 0;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
 }
 .nav-element-container {
   /* padding-right: 1.5rem; */
